@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/R.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Pass-Gen</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <i class="fa-solid fa-shield"></i>
+          <h1>Pass-Gen</h1>
+        </a>
+      </div>
+
+      <input type="button" value="Start Now" />
+    </header>
+
+    <main>
+      <h2>Fill to Generate</h2>
+      <div class="main-content">
+        <form class="usr_info_form" id="usr_info_form" method="get">
+          <div class="usr_names">
+            <input
+              type="text"
+              placeholder="First name"
+              id="f_name"
+              required
+              minlength="3"
+              maxlength="25"
+              name="f_name"
+            />
+            <input
+              type="text"
+              placeholder="Last name"
+              id="l_name"
+              required
+              minlength="3"
+              maxlength="25"
+              name="l_name"
+            />
+          </div>
+          <input
+            type="number"
+            placeholder="Favorite Number (from 0 to 9)"
+            id="usr_fav_num"
+            min="0"
+            max="9"
+            required
+            name="usr_fav_num"
+          />
+          <button type="button" id="gen_button" onclick="get_form_values()">
+            Generate now
+          </button>
+        </form>
+
+        <section class="pass_result">
+          <p>Your password is..</p>
+          <div class="pass_box">
+            <span id="usr_pass_result">[ - YOUR GENERATED PASSWORD - ]</span>
+            <i
+              title="COPY"
+              onclick="copy_change_icon()"
+              class="fa-regular fa-copy"
+            ></i>
+            <!-- <i class="fa-solid fa-copy"></i> -->
+          </div>
+          <input
+            type="submit"
+            value="Re - generate"
+            id="re_gen_button"
+            onclick="get_form_values()"
+          />
+        </section>
+      </div>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>

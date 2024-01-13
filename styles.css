@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-color: #171717;
+}
+
+header {
+  width: 100%;
+  height: 6em;
+  background-color: #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 2.5em;
+}
+.logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #da0037;
+  gap: 1em;
+}
+.logo a i {
+  font-size: 3.5em;
+}
+.logo a h1 {
+  font-size: 3em;
+}
+header input {
+  display: flex;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  border: none;
+  background-color: #da0037;
+  color: #ededed;
+  border-radius: 9999px;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#gen_button,
+#re_gen_button {
+  cursor: pointer;
+  color: #ededed !important;
+  background-color: #da0037 !important;
+  transition: 0.2s ease;
+}
+header input:hover,
+#gen_button:hover,
+#re_gen_button:hover {
+  background-color: #c10030 !important;
+}
+header input:focus,
+header input:active,
+#gen_button:active,
+#re_gen_button:active {
+  background-color: #ededed !important;
+  color: #da0037 !important;
+  border: 0.05em solid #da0037 !important;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+}
+main h2 {
+  font-size: 6em;
+  color: #da0037;
+  border-bottom: 0.01em solid #c10030;
+  text-align: center;
+  margin-top: 1em;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 6em;
+}
+.usr_names {
+  display: flex;
+  gap: 3em;
+}
+.usr_names input,
+#re_gen_button {
+  background-color: #ededed;
+  font-size: 1.8em;
+  width: 11em;
+  padding: 0.5em;
+  border-radius: 9999px;
+  text-align: center;
+  border: none;
+  color: #c10030;
+  outline: none;
+}
+#usr_fav_num,
+#gen_button {
+  background-color: #ededed;
+  font-size: 1.8em;
+  padding: 0.5em;
+  border-radius: 9999px;
+  text-align: center;
+  border: none;
+  color: #c10030;
+  outline: none;
+}
+.pass_result {
+  background-color: #444444;
+  padding: 1em;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+  margin-top: 5em;
+}
+.pass_result p {
+  color: #ededed;
+  font-size: 3em;
+  text-align: center;
+}
+.pass_box {
+  background-color: #ededed;
+  color: #da0037;
+  font-size: 2em;
+  font-weight: 500;
+  width: 20em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2em 0.8em;
+  border-radius: 9999px;
+}
+.pass_box i {
+  cursor: pointer;
+}
